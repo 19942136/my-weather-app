@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="weather-app">
     <header>
         <form>
-            <input type="search" placeholder="Enter a city..." required>
-            <input type="submit" value="Search">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input">
+            <input type="submit" value="Search" class="search-form-button">
         </form>
     </header>
     <main>
-        <h1>Paris</h1>
-        <p>Wednesday 15:32, partly sunny <br> Humidity: 66%,  Wind:3.13km/h </p>
-        <div>⛅18°C</div>
+        <div class="weather-app-data">
+            <div>
+        <h1 class="weather-app-city">Paris</h1>
+        <p class="weather-app-details">Wednesday 15:32, partly sunny <br> Humidity: <strong>66%</strong>,  Wind:<strong>3.13km/h<strong> </p>
+            </div>
+        <div class="weather-app-temperautre-container">
+            <span class="weather-app-icon">⛅</span>
+            <span class="weather-app-temperature">18</span>
+            <span class="weather-app-unit">°C</span>
+            </div>
     </main>
     <footer>
-        This project was coded by Faith Ngomane <a href="github" target="_blank">
-            is open-sourced on github <a href="github"> and hosted on Netlify <a href="netlify"></a>
+        This project was coded by <a href="github" target="_blank">Fiath Ngomane</a> is <a href="github">open-sourced on Github</a> and <a href="netlify">hosted on Netlify</a>
     </footer>
-    
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
